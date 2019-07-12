@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+
+   <head>
+      <title>Simple URL Shortener</title><link href="/public/style.css" rel="stylesheet" type="text/css">
+   </head>
+
+   <body>
+     
+    <header>
+      <h2>URL Shortener Service</h2>
+    </header>
+     
+    <div class="container">
+      <div class="body">
+        <form method="POST" action="/api/shorten/new">
+          <div class="frm-grp">
+            <input type="text" name="url" required placeholder="Enter original URL here...">
+            <button type="submit">
+              Shorten URL
+            </button>
+            <p class="inst">
+              <strong style="color:#000000;">Instruction:</strong> Enter URL without <strong>"http://"</strong><br>
+              Example: <strong>google.com</strong> or <strong>www.google.com</strong>
+          </p>
+          </div>
+        </form>
+      </div>
+    </div>
+     
+     <footer>by <a href="http://www.twitter.com/devenkshp" target="_blank">devenkshp</a></footer>
+     
+   </body>
+</html>
